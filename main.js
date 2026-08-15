@@ -31,11 +31,8 @@ document.body.appendChild(renderer.domElement);
 
 // BOTÓN AR
 document.body.appendChild(
-  ARButton.createButton(renderer, {
-    requiredFeatures: ['hit-test']
-  })
+  ARButton.createButton(renderer)
 );
-
 
 // LUZ
 const light = new THREE.HemisphereLight(
@@ -69,7 +66,7 @@ scene.add(cube);
 
 
 // HIT TEST
-let hitTestSource = null;
+/*let hitTestSource = null;
 let localReferenceSpace = null;
 
 renderer.xr.addEventListener(
@@ -104,6 +101,8 @@ renderer.xr.addEventListener(
 
   }
 );
+
+*/
 
 
 // ANIMACIÓN
